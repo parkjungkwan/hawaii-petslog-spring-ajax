@@ -1,0 +1,25 @@
+drop table if exists pets;
+CREATE TABLE pets (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	name VARCHAR(20) NOT NULL,
+	min_life INT,
+	max_life INT,
+	origin VARCHAR(20),
+	intelligence VARCHAR(10),
+	imgurl VARCHAR(100),
+	temperament VARCHAR(100),
+	PRIMARY KEY(id)
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+drop table if exists accounts;
+CREATE TABLE accounts (
+	id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+	email VARCHAR(50) UNIQUE,
+	hashed_password VARCHAR(20),
+	salt VARCHAR(20),
+	name VARCHAR(20),
+	type VARCHAR(20),
+	PRIMARY KEY (id)
+)ENGINE=InnoDB DEFAULT CHARSET=UTF8;
+show tables;
+select * from accounts;
+select * from pets;
