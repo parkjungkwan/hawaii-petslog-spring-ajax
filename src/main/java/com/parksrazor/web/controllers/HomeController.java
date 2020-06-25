@@ -28,7 +28,7 @@ public class HomeController {
 		model.addAttribute("serverTime", 
 				DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale)
 				.format(new Date()) );
-		return "Home";
+		return "Home.jsp";
 	}
 	
 }

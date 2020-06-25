@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="noTiles" template="/WEB-INF/views/layouts/Public.jsp">
+   		<put-attribute name="noTemplate" value="" />
+    </definition>
+    <definition name="*.jsp" extends="noTiles">
+    	<put-attribute name="noTemplate" value="/WEB-INF/views/{1}.jsp" />
+    </definition>
+</tiles-definitions>
