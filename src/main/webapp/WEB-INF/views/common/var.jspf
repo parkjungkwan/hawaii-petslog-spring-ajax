@@ -1,0 +1,8 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>   
+<c:set var="context" value="<%=request.getContextPath() %>"></c:set>
+<c:set var="css" value="${context}/resources/css"></c:set>
+<c:set var="js" value="${context}/resources/js"></c:set>
+<c:set var="img" value="${context}/resources/img"></c:set>
+<c:set var="font" value="${context}/resources/font%>"></c:set>

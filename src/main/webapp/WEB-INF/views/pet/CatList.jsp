@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<jsp:include page="Header.jsp"/>
+<jsp:include page="../common/Header.jsp"/>
 		<div class="App">
 			<div class="header">
 				<img
@@ -219,4 +219,4 @@
 				</div>
 			</div>
 		</div>
-<jsp:include page="Footer.jsp"/>
+<jsp:include page="../common/Footer.jsp"/>

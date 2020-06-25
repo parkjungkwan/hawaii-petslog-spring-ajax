@@ -44,5 +44,27 @@
 		<filter-name>encodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/common/Error404.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/views/common/Error500.jsp</location>
+	</error-page>
+	<jsp-config>
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/views/common/var.jspf</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
 
 </web-app>
+
+
+
+
+
+
+
+
