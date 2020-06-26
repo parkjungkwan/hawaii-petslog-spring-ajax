@@ -24,8 +24,8 @@
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.3.xsd">
 
-	<mvc:annotation-driven /> 
-	<context:component-scan base-package="com.parksrazor.web.controllers" />
+	<mvc:annotation-driven />
+	<context:component-scan base-package="com.parksrazor.web" />
 	<mvc:resources mapping="/resources/**" location="/resources/" />
 	<bean class="org.springframework.web.servlet.view.ContentNegotiatingViewResolver">
 		<property name="contentNegotiationManager" ref="contentNegotiationManager"/>
