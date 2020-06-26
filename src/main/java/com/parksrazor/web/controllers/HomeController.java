@@ -14,7 +14,7 @@ public class HomeController {
 	public String home() {
 		logger.info("홈컨트롤러 진입");
 	
-		return "Home.jsp";
+		return "main/Home.tiles";
 	}
 	
 }
